@@ -1,3 +1,7 @@
+/*//////////*/
+/*  GLOBAL  */
+/*//////////*/
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
@@ -12,8 +16,12 @@ p {
   font-weight: 300;
 }
 
+/*//////////*/
+/*  HEADER  */
+/*//////////*/
+
 .main-title {
-  font-size: 4rem;
+  /*font-size: ;*/
   margin: 5px auto 5px auto;
 }
 
@@ -26,6 +34,27 @@ nav {
   text-align: center;
 }
 
+/*////////*/
+/*  MAIN  */
+/*////////*/
+
 #portfolio {
   background-color: cyan;
+  height: 100%;
+  width: 100%;
+}
+
+#about {
+  background-color: fuchsia;
+  text-align: center;
+}
+
+#contact {
+  background-color: yellow;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 30px;
 }
