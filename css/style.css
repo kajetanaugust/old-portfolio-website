@@ -28,9 +28,17 @@ p {
 /*  HEADER  */
 /*//////////*/
 
+header {
+  position:sticky;
+  top: 0;
+  background-color: rgba(256, 256, 256, 1);
+
+}
+
 .main-title {
   font-size: 4rem;
   margin: 5px auto 5px auto;
+
 }
 
 .subtitle {
@@ -91,5 +99,11 @@ nav p {
 
 footer {
   text-align: center;
+  padding-top: 7px;
   padding-bottom: 30px;
+  background-color:#9dbfaa;
+}
+
+footer p {
+  color: white;
 }
