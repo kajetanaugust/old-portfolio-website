@@ -80,23 +80,29 @@ nav p {
 /*  MAIN  */
 /*////////*/
 
-#portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 #portfolio h2 {
   width:auto;
 }
 
+.portfolio-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+
 .imac-mockup-webapp {
-  width: auto;
+  width: 300px;
   height: auto;
-  transform: scale(0.2);
   margin-left: 25px;
 }
 
+#portfolio p {
+  width:50%;
+  height: auto;
+  margin-left: 25px;
+}
 
 #about {
   text-align: center;
