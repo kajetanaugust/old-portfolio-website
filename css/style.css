@@ -112,6 +112,15 @@ nav p {
   text-align: center;
 }
 
+.github-icon{
+  height: 45px;
+  margin: 10px 20px auto 20px;
+}
+
+#contact a {
+  color: white;
+}
+
 footer {
   text-align: center;
   padding-top: 7px;

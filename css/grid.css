@@ -36,8 +36,8 @@
   #sections-grid {
 
     display: grid;
-    grid-template-columns: 95%;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr auto auto;
     grid-row-gap: 25px;
     grid-template-areas:
       'portfolio'
