@@ -37,8 +37,8 @@
 
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 2fr auto;
-    grid-row-gap: 25px;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
     grid-template-areas:
       'portfolio'
       'about'
