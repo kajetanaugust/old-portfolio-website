@@ -1,5 +1,12 @@
 $(document).ready(function(){
   $('.single-item').slick({
-    // setting-name: setting-value
+    // dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: true,
+    autoplay:true,
+    autoplaySpeed: 3500
 });
 });

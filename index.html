@@ -5,8 +5,8 @@
       <title>Kajetan August</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+      <link rel="stylesheet" type="text/css" href="js/slick/slick.scss"/>
+      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.scss"/>
       <link rel='stylesheet' href='css/grid.css'>
       <link rel='stylesheet' href='css/normalize.css'>
       <link rel='stylesheet' href='css/style.css'>
@@ -21,9 +21,9 @@
     <!-- -- DESKTOP NAV -- -->
     <!-- ----------------- -->
       <nav class='desktop-nav'>
-        <a id='nav-portfolio' href='#portfolio'>portfolio</a>
-        <p>/</p>
         <a id='nav-about' href='#about'>about</a>
+        <p>/</p>
+        <a id='nav-portfolio' href='#portfolio'>portfolio</a>
         <p>/</p>
         <a id='nav-experience' href='#about'>experience</a>
         <p>/</p>
@@ -33,20 +33,37 @@
     <!--  DESKTOP NAV END  -->
     <!-- ----------------- -->
 
+    <!-- ----------------- -->
+    <!-- -- MOBILE NAV -- -->
+    <!-- ----------------- -->
+
 <!--      <nav class='mobile-nav'>-->
 <!--        <a id='mobile-nav-portfolio' href='#portfolio'>portfolio</a>-->
 <!--        <a id='mobile-nav-about' href='#about'>about</a>-->
 <!--        <a id='mobile-nav-experience' href='#about'>experience</a>-->
 <!--        <a id='mobile-nav-contact' href='#contact'>contact</a>-->
 <!--      </nav>-->
-    <!-- ----------------- -->
-    <!-- -- MOBILE NAV -- -->
-    <!-- ----------------- -->
+
 
     </header>
 
     <main>
       <div id='sections-grid'>
+
+
+        <!-- ----- -->
+        <!-- ABOUT -->
+        <!-- ----- -->
+        <article id='about'>
+          <h2>about</h2>
+          <h4 class='secondary-color'>Hi, I'm Kajetan!</h4>
+          <p class='secondary-color'>Graphic designer turned front-end developer.</p>
+        </article>
+        <!-- --------- -->
+        <!-- ABOUT END -->
+        <!-- --------- -->
+
+
         <!-- --------- -->
         <!-- PORTFOLIO -->
         <!-- --------- -->
@@ -62,10 +79,10 @@
               </div>
               <div class='portfolio-wrap'>
                 <img class=' imac-mockup-webapp' src='images/imac.svg' alt='imac mockup'>
-                <p>Cupcake ipsum dolor sit amet wafer toffee. Soufflé cookie sugar plum halvah ice cream cookie topping.
-                  Bonbon lemon drops gummies tootsie roll chocolate cake pudding lemon drops.
-                  Gummi bears gummies gummies lemon drops caramels sesame snaps toffee cotton candy.
-                  Sugar plum cheesecake chocolate marzipan marshmallow jelly beans sugar plum pastry gummies. Danish biscuit cheesecake.</p>
+<!--                <p>Cupcake ipsum dolor sit amet wafer toffee. Soufflé cookie sugar plum halvah ice cream cookie topping.-->
+<!--                  Bonbon lemon drops gummies tootsie roll chocolate cake pudding lemon drops.-->
+<!--                  Gummi bears gummies gummies lemon drops caramels sesame snaps toffee cotton candy.-->
+<!--                  Sugar plum cheesecake chocolate marzipan marshmallow jelly beans sugar plum pastry gummies. Danish biscuit cheesecake.</p>-->
               </div>
               <div class='portfolio-wrap'>
                 <img class=' imac-mockup-webapp' src='images/imac.svg' alt='imac mockup'>
@@ -94,19 +111,6 @@
         <!-- PORTFOLIO END -->
         <!-- ------------- -->
 
-
-
-        <!-- ----- -->
-        <!-- ABOUT -->
-        <!-- ----- -->
-          <article id='about'>
-            <h2>about</h2>
-            <h4 class='secondary-color'>Hi, I'm Kajetan!</h4>
-            <p class='secondary-color'>Graphic designer turned front-end developer.</p>
-          </article>
-        <!-- --------- -->
-        <!-- ABOUT END -->
-        <!-- --------- -->
 
         <!-- ---------- -->
         <!-- EXPERIENCE -->
