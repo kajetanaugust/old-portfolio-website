@@ -127,23 +127,39 @@ header {
 
 .portfolio-wrap {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   align-content: center;
   justify-content: space-evenly;
   background-color: #9DBFAA;
-  width:100%;
   height: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /*padding:25px 150px;*/
+  margin: auto
 }
 
-.imac-mockup-webapp {
+.project-wrap {
+  text-align: center;
+  padding: 25px 25px;
+}
+
+.project-wrap button {
+  border:1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  width: 80px;
+  height: 40px;
+  color: #E68C87;
+}
+
+.project-wrap button:last-child {
+  margin-left: 20px;
+}
+
+
+.mockup-webapp {
   width: 300px;
   height: auto;
-  margin-left: 25px;
 }
 
 #portfolio p {
@@ -182,4 +198,45 @@ footer {
 
 footer p {
   color: white;
+}
+
+
+/*/////////////////////*/
+/*//// MEDIA QUERY ////*/
+/*/////////////////////*/
+
+@media screen and (min-width: 768px ) {
+  .mockup-webapp {
+    width: 400px;
+    height: auto;
+  }
+
+  .portfolio-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: #9DBFAA;
+    height: auto;
+    padding:25px 150px;
+    margin: auto
+  }
+
+  /*s*/
+
+}
+
+@media screen and (min-width: 1024px ) {
+
+  .mockup-webapp {
+    width: 500px;
+    height: auto;
+  }
+
+  .project-wrap {
+    padding: 50px 50px;
+  }
 }
