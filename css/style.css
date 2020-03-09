@@ -17,16 +17,9 @@ p {
 }
 
 h2 {
-  color: #BF7571;
+  color: #69ca8e;
 }
 
-.primary-color {
-  color: #344039;
-}
-
-.secondary-color {
-  color: #698071;
-}
 
 /*//////////*/
 /*  HEADER  */
@@ -43,13 +36,13 @@ header {
 .main-title {
   font-size: 4rem;
   margin: 5px auto 5px auto;
-  color: #9dbfaa;
+  color: #69ca8e;
 }
 
 .subtitle {
   margin-top:5px;
   margin-bottom: 15px;
-  color: #E68C87;
+  color: #69ca8e;
 
 }
 
@@ -132,9 +125,8 @@ header {
   justify-items: center;
   align-content: center;
   justify-content: space-evenly;
-  background-color: #9DBFAA;
+  background-color: rgba(157, 191, 170, 0.4);
   height: auto;
-  /*padding:25px 150px;*/
   margin: auto
 }
 
@@ -144,12 +136,12 @@ header {
 }
 
 .project-wrap button {
-  border:1px solid white;
+  border:1px solid #69CA8E;
   border-radius: 5px;
-  background-color: white;
+  background-color:#69CA8E;
   width: 80px;
   height: 40px;
-  color: #E68C87;
+  color: white;
 }
 
 .project-wrap button:last-child {
@@ -219,17 +211,16 @@ footer p {
     justify-items: center;
     align-content: center;
     justify-content: space-evenly;
-    background-color: #9DBFAA;
+
     height: auto;
-    padding:25px 150px;
+    padding:25px 50px;
     margin: auto
   }
-
-  /*s*/
 
 }
 
 @media screen and (min-width: 1024px ) {
+
 
   .mockup-webapp {
     width: 500px;
