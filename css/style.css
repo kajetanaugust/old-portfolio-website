@@ -28,7 +28,7 @@ h2 {
 header {
   position:sticky;
   top: 0;
-  background-color: rgba(256, 256, 256, 1);
+  background-color: white;
   z-index: 100;
 
 }
@@ -37,15 +37,15 @@ header {
   font-size: 4rem;
   margin: 5px auto 5px auto;
   color: #69ca8e;
+  background-color: white;
 }
 
 .subtitle {
   margin-top:5px;
   margin-bottom: 15px;
   color: #69ca8e;
-
+  background-color: white;
 }
-
 
 /*//////////////*/
 /*  DESKTOP NAV */
