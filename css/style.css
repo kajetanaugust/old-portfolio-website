@@ -28,21 +28,29 @@ h2 {
 header {
   position:sticky;
   top: 0;
-  padding-top: 25px;
   background-color: #69ca8e;
   z-index: 100;
 }
 
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
 .main-title {
-  font-size: 4rem;
-  margin: 5px auto 5px auto;
+  font-size: 3rem;
+  margin: 10px auto 5px auto;
   color: white;
   background-color: #69ca8e;
 }
 
 .subtitle {
-  padding-top:5px;
-  padding-bottom: 15px;
+  padding-top:0;
+  padding-bottom: 5px;
+  margin-top: 0;
   margin-bottom: 0;
   color: white;
   background-color: #69ca8e;
@@ -60,6 +68,7 @@ header {
   height:60px;
   padding-top:1px;
   padding-bottom: 3px;
+  padding-left:45px;
   background-color: #69ca8e;
 }
 
@@ -135,6 +144,9 @@ header {
   align-items: center;
 }
 
+#about h2{
+  margin-top: 5px;
+}
 
 #portfolio h2 {
   width:auto;
@@ -194,8 +206,6 @@ header {
 #experience {
   text-align: center;
 }
-
-
 
 #contact {
   text-align: center;

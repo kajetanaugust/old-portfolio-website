@@ -5,8 +5,8 @@
   body {
      display: grid;
      grid-template-columns: 100%;
-     grid-template-rows: 150px 1fr 60px;
-     grid-row-gap: 50px;
+     grid-template-rows: 110px 1fr 60px;
+     grid-row-gap: 15px;
      grid-template-areas:
        'header'
        'main'
