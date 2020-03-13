@@ -211,7 +211,8 @@ header {
   text-align: center;
 }
 
-.github-icon{
+.technology-icon,
+.contact-website-icon  {
   height: 45px;
   margin: 10px 20px auto 20px;
 }
