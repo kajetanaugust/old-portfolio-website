@@ -121,6 +121,7 @@ header {
 .mobile-nav a:hover {
   color: white;
 }
+
 /*////////*/
 /*  MAIN  */
 /*////////*/
@@ -203,12 +204,11 @@ header {
   margin-top: 25px;
 }
 
+/*EXPERIENCE*/
+
 #experience {
   text-align: center;
-}
-
-#contact {
-  text-align: center;
+  margin-bottom:20px;
 }
 
 .technology-icon,
@@ -217,9 +217,33 @@ header {
   margin: 10px 20px auto 20px;
 }
 
+#more-info-div {
+  background-color: rgba(157, 191, 170, 0.2);
+  width: 33%;
+  position: absolute;
+  text-align: center;
+  left:33%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#more-info-div p  {
+  color: #69ca8e;
+}
+
+/*CONTACT*/
+
+#contact {
+  text-align: center;
+}
+
 #contact a {
   color: white;
 }
+
+/*//////////*/
+/*  FOOTER  */
+/*//////////*/
 
 footer {
   text-align: center;
