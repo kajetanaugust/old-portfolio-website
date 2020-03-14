@@ -191,6 +191,7 @@ header {
 .mockup {
   width: 300px;
   height: auto;
+  border-radius: 5px;
 }
 
 #portfolio p {
@@ -225,6 +226,8 @@ header {
   left:33%;
   border-radius: 5px;
   margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #more-info-div p  {
@@ -235,6 +238,7 @@ header {
 
 #contact {
   text-align: center;
+  padding-bottom: 25px;
 }
 
 #contact a {
