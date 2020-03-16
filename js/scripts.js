@@ -28,8 +28,8 @@ experience.addEventListener('mouseover', (e) => {
 });
 
 
-mobileMenuButton.addEventListener('click', () =>{
-  if (mobileNav.style.display === 'flex'){
+mobileMenuButton.addEventListener('click', (e) =>{
+  if (mobileNav.style.display === 'flex' || e.target !== mobileNav ){
     mobileNav.style.display = 'none';
     mobileMenuButton.textContent = 'MENU'
   }else {
