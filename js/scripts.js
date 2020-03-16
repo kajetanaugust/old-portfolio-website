@@ -16,7 +16,7 @@ const technologiesAdditionalInfo = {HTML5:`<p>HTML5 - "describes the basic struc
                                     JavaScript:`<p>JavaScript - "programming language that allows you to add interactivity to websites."</p>`,
                                     Sass:`<p>Sass - "CSS preprocessor which adds functionality souch as mixins or nesting"</p>`,
                                     jQuery:`<p>jQuery - "JavaScript library designed to simplify HTML DOM tree manipulations."</p>`,
-                                    Bootstrap:`<p>Bootstrap - "open-source CSS framework directed at responsive front-end web development."</p>`
+                                    Bootstrap:`<p>Bootstrap - "CSS framework directed at responsive front-end web development."</p>`
                                   };
 
 const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
