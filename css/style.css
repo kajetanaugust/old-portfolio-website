@@ -26,7 +26,7 @@ h2 {
 /*//////////*/
 
 header {
-  position:sticky;
+  position: sticky;
   top: 0;
   background-color: #69ca8e;
   z-index: 100;
@@ -49,7 +49,7 @@ header {
 
 .subtitle {
   font-size: 1rem;
-  padding-top:0;
+  padding-top: 0;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
@@ -68,7 +68,7 @@ header {
 #menu-button {
   height: 25px;
   text-align: center;
-  width:100%;
+  width: 100%;
   background-color: #69ca8e;
   text-justify: auto;
   font-size: 1.5rem;
@@ -92,8 +92,8 @@ header {
 #mobile-nav a {
   text-decoration: none;
   font-size: 1.2rem;
-  display:inline-block;
-  margin:15px auto 10px auto;
+  display: inline-block;
+  margin: 15px auto 10px auto;
   border-bottom: 1px solid #69ca8e;
 }
 
@@ -124,14 +124,14 @@ header {
 }
 
 .about-wrap {
-  padding-top:25px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
-  width:90%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -140,12 +140,12 @@ header {
   padding: 25px 25px;
 }
 
-#about h2{
+#about h2 {
   margin-top: 5px;
 }
 
 #portfolio h2 {
-  width:auto;
+  width: auto;
 }
 
 #portfolio-wrap {
@@ -161,7 +161,7 @@ header {
 }
 
 .project-wrap {
-  position:relative;
+  position: relative;
   text-align: center;
   padding: 25px 25px;
 }
@@ -170,10 +170,10 @@ header {
 .git-button,
 .www-button {
   display: inline-block;
-  border:1px solid #69CA8E;
+  border: 1px solid #69CA8E;
   border-radius: 5px;
-  background-color:#69CA8E;
-  padding-top:10px;
+  background-color: #69CA8E;
+  padding-top: 10px;
   padding-bottom: 10px;
   color: white;
   width: 80px;
@@ -189,18 +189,18 @@ header {
   position: absolute;
   background-color: #69ca8e;
   width: 75%;
-  padding:10px 5px;
+  padding: 10px 5px;
   border-radius: 5px;
   font-size: 1.5rem;
   transform: translate(-50%, -50%);
-  top:30%;
-  left:50%;
-  color:white;
+  top: 30%;
+  left: 50%;
+  color: white;
 
 }
 
 .project-wrap a {
-  color:rgba(157, 191, 170, 0.2);
+  color: rgba(157, 191, 170, 0.2);
 }
 
 
@@ -220,11 +220,11 @@ header {
 
 #experience {
   text-align: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .technology-icon,
-.contact-website-icon  {
+.contact-website-icon {
   height: 45px;
   margin: 10px 20px auto 20px;
 }
@@ -234,7 +234,7 @@ header {
   width: 85%;
   position: absolute;
   text-align: center;
-  left:3%;
+  left: 3%;
 
   border-radius: 5px;
   margin-top: 10px;
@@ -242,7 +242,7 @@ header {
   padding-right: 15px;
 }
 
-#more-info-div p  {
+#more-info-div p {
   color: #69ca8e;
 }
 
@@ -266,7 +266,7 @@ footer {
   text-align: center;
   padding-top: 7px;
   padding-bottom: 30px;
-  background-color:#69ca8e;
+  background-color: #69ca8e;
 }
 
 footer p {
@@ -296,7 +296,7 @@ footer p {
 }
 
 #basic-info {
-  width:95%;
+  width: 95%;
   text-align: center;
   margin-top: 25px;
 }
@@ -310,7 +310,7 @@ footer p {
 }
 
 #modal-info {
-  width:95%;
+  width: 95%;
   text-align: center;
 }
 
@@ -335,8 +335,8 @@ footer p {
 }
 
 .modal-mockup {
-  width:90%;
-  border:1px solid lightgrey;
+  width: 90%;
+  border: 1px solid lightgrey;
   border-radius: 5px;
 }
 
@@ -353,7 +353,7 @@ footer p {
 .technology-name {
   background-color: rgba(157, 191, 170, 0.2);
   width: auto;
-  height:25px;
+  height: 25px;
   padding: 10px 10px 5px 10px;
   text-align: center;
   border-radius: 5px;
@@ -366,12 +366,13 @@ footer p {
 /*//// MEDIA QUERY ////*/
 /*/////////////////////*/
 
-@media screen and (min-width: 576px ){
+@media screen and (min-width: 576px ) {
 
   #modal-window {
     width: 80%;
     height: 80%;
   }
+
   .modal-text {
     font-size: initial;
   }
@@ -379,7 +380,7 @@ footer p {
 
 @media screen and (min-width: 768px ) and (orientation: landscape) {
 
-  #menu-button  {
+  #menu-button {
     display: none;
   }
 
@@ -399,7 +400,7 @@ footer p {
   }
 
   .subtitle {
-    padding-top:0;
+    padding-top: 0;
     padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 0;
@@ -410,23 +411,22 @@ footer p {
   /*//////////////*/
   /*  DESKTOP NAV */
   /*//////////////*/
-
   .desktop-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    height:60px;
-    padding-top:10px;
+    height: 60px;
+    padding-top: 10px;
     padding-bottom: 3px;
-    padding-left:45px;
+    padding-left: 45px;
     background-color: #69ca8e;
   }
 
   .desktop-nav a {
     text-decoration: none;
     font-size: 1.2rem;
-    display:inline-block;
+    display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
     color: #21402d;
@@ -437,7 +437,7 @@ footer p {
   }
 
   .desktop-nav p {
-    margin:22px 10px auto 10px;
+    margin: 22px 10px auto 10px;
     font-size: 1rem;
     font-weight: 100;
   }
@@ -461,11 +461,11 @@ footer p {
   }
 
   .modal-mockup {
-    width:100%;
+    width: 100%;
   }
 
   #basic-info {
-    width:45%;
+    width: 45%;
     text-align: center;
   }
 
@@ -475,7 +475,7 @@ footer p {
 
 
   #modal-info {
-    width:45%;
+    width: 45%;
   }
 
   #modal-x {
@@ -491,7 +491,7 @@ footer p {
     align-content: center;
     justify-content: space-evenly;
     height: auto;
-    padding:25px 50px;
+    padding: 25px 50px;
     margin: auto
   }
 
@@ -501,7 +501,7 @@ footer p {
   }
 
   .more-info-button {
-    top:37%;
+    top: 37%;
   }
 
   #modal-window {
@@ -533,7 +533,7 @@ footer p {
 
   #more-info-div {
     width: 33%;
-    left:33%;
+    left: 33%;
   }
 
   #modal-window {
