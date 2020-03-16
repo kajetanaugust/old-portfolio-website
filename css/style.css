@@ -120,6 +120,7 @@ header {
   margin-bottom: 25px;
   align-self: center;
   justify-self: center;
+  padding: 25px 25px;
 }
 
 .about-wrap {
@@ -130,6 +131,13 @@ header {
   align-content: center;
   justify-items: center;
   align-items: center;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  padding: 25px 25px;
 }
 
 #about h2{
@@ -153,6 +161,7 @@ header {
 }
 
 .project-wrap {
+  position:relative;
   text-align: center;
   padding: 25px 25px;
 }
@@ -171,6 +180,20 @@ header {
   margin-left: 20px;
 }
 
+.more-info-button {
+  position: absolute;
+  background-color: #69ca8e;
+  width: 75%;
+  padding:10px 5px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+  top:30%;
+  left:50%;
+  color:white;
+
+}
+
 .project-wrap a {
   color:rgba(157, 191, 170, 0.2);
 }
@@ -182,11 +205,6 @@ header {
   border-radius: 5px;
 }
 
-#portfolio p {
-  width:50%;
-  height: auto;
-  margin-left: 25px;
-}
 
 #about {
   text-align: center;
@@ -212,7 +230,7 @@ header {
   position: absolute;
   text-align: center;
   left:3%;
-  /*transform: translate(-50%, -50%);*/
+
   border-radius: 5px;
   margin-top: 10px;
   padding-left: 15px;
@@ -260,8 +278,8 @@ footer p {
   z-index: 999;
   top: 50%;
   left: 50%;
-  width: 95%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   background-color: white;
   border-radius: 5px;
   border: lightgrey 1px solid;
@@ -285,6 +303,10 @@ footer p {
 #modal-info {
   width:95%;
   text-align: center;
+}
+
+.modal-text {
+  font-size: 0.8rem;
 }
 
 #modal-x {
@@ -334,6 +356,17 @@ footer p {
 /*/////////////////////*/
 /*//// MEDIA QUERY ////*/
 /*/////////////////////*/
+
+@media screen and (min-width: 576px ){
+
+  #modal-window {
+    width: 80%;
+    height: 80%;
+  }
+  .modal-text {
+    font-size: initial;
+  }
+}
 
 @media screen and (min-width: 768px ) and (orientation: landscape) {
 
@@ -436,6 +469,10 @@ footer p {
     width:45%;
   }
 
+  #modal-x {
+    left: 97%;
+  }
+
   #portfolio-wrap {
     display: flex;
     flex-direction: row;
@@ -454,6 +491,10 @@ footer p {
     left: 25%;
   }
 
+  .more-info-button {
+    top:37%;
+  }
+
   #modal-window {
     width: 50%;
     /*max-width: 300px;*/
@@ -463,6 +504,14 @@ footer p {
 }
 
 @media screen and (min-width: 1024px ) {
+
+  .about-wrap {
+    justify-content: space-evenly;
+  }
+
+  .about-text {
+    width: 35%;
+  }
 
   .mockup {
     width: 500px;

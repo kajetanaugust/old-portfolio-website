@@ -21,8 +21,8 @@ const technologiesAdditionalInfo = {
 
 const projectsInfo = {
   project1: `<h3>WebApp Dashboard</h3>
-                                 <p>It's the fully functional web dashboard. The app is built with mobile-first approach so it is responsive through all the resolutions.
-                                 It includes Chartist.js plugin for displaying charts and CSS TOGGLE SWITCH for altering the apperance of switches.
+                                 <p class='modal-text'>The WebApp dashboard is built with mobile-first approach so it is responsive through all the resolutions.
+                                 It includes Chartist.js plugin for displaying charts.
                                  It uses sessionStorage to save settings</p>
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
@@ -31,7 +31,7 @@ const projectsInfo = {
                                  `,
 
   project2: `<h3>Users Directory</h3>
-                                 <p>This is the employee directory, it uses fetch API to get 12 random users. Users can be filtered with search bar. The detailed informations are displayed in modal window.</p>
+                                 <p class='modal-text'>This is the employee directory, it uses fetch API to get 12 random users. Users can be filtered with search bar. The detailed informations are displayed in modal window.</p>
 
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
@@ -40,7 +40,7 @@ const projectsInfo = {
                                  `,
 
   project3: `<h3>Wheel Of Succes</h3>
-                                 <p>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+                                 <p class='modal-text'>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
 
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
@@ -48,7 +48,7 @@ const projectsInfo = {
                                  `,
 
   project4: `<h3>Sign-Up Form</h3>
-                                 <p>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
+                                 <p class='modal-text'>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
 
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
@@ -56,7 +56,7 @@ const projectsInfo = {
 
 
   project5: `<h3>Scss Web Style Guide</h3>
-                                 <p>Web style guide is a sass micro-framework created for quick prototyping.</p>
+                                 <p class='modal-text'>Web style guide is a sass micro-framework created for quick prototyping.</p>
 
                                    <p class='technology-name'>HTML</p>
                                    <p class='technology-name'>Scss</p>
@@ -144,7 +144,7 @@ mobileMenuButton.addEventListener('click', () => {
 portfolioWrap.addEventListener('click', (e) => {
   const target = e.target.getAttribute('class');
   const chosenProject = target.substr(0, 8);
-  if (target.includes('mockup')) {
+  if (target.includes('mockup') ||target.includes('project')) {
 
     modalWindow.innerHTML = `
         <p id='modal-x'>x</p>
@@ -160,7 +160,7 @@ portfolioWrap.addEventListener('click', (e) => {
         `;
     modalWindow.style.display = 'flex';
     modalBackground.style.display = 'initial';
-
+    closingModal();
   }
-  closingModal();
+
 });
