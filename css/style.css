@@ -215,7 +215,8 @@ header {
   /*transform: translate(-50%, -50%);*/
   border-radius: 5px;
   margin-top: 10px;
-  padding: 5px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #more-info-div p  {
