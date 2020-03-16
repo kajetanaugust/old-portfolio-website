@@ -1,4 +1,3 @@
-const technologyIcons = document.getElementsByClassName('technology-icon');
 const experience = document.getElementById('experience');
 const moreInfoDiv = document.getElementById('more-info-div');
 
@@ -133,10 +132,10 @@ experience.addEventListener('mouseover', (e) => {
 mobileMenuButton.addEventListener('click', () => {
   if (mobileNav.style.display === 'flex') {
     mobileNav.style.display = 'none';
-    mobileMenuButton.textContent = 'MENU'
+    mobileMenuButton.textContent = 'MENU';
   } else {
     mobileNav.style.display = 'flex';
-    mobileMenuButton.textContent = 'CLOSE'
+    mobileMenuButton.textContent = 'CLOSE';
   }
 });
 
