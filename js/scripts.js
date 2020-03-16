@@ -1,4 +1,3 @@
-
 const technologyIcons = document.getElementsByClassName('technology-icon');
 const experience = document.getElementById('experience');
 const moreInfoDiv = document.getElementById('more-info-div');
@@ -11,15 +10,17 @@ const modalWindow = document.getElementById('modal-window');
 const modalBackground = document.getElementById('modal-background');
 
 
-const technologiesAdditionalInfo = {HTML5:`<p>HTML5 - "describes the basic structure and content of a web page."</p>`,
-                                    CSS3:`<p>CSS3 - "forms the presentational layer of web pages."</p>`,
-                                    JavaScript:`<p>JavaScript - "programming language that allows you to add interactivity to websites."</p>`,
-                                    Sass:`<p>Sass - "CSS preprocessor which adds functionality souch as mixins or nesting"</p>`,
-                                    jQuery:`<p>jQuery - "JavaScript library designed to simplify HTML DOM tree manipulations."</p>`,
-                                    Bootstrap:`<p>Bootstrap - "CSS framework directed at responsive front-end web development."</p>`
-                                  };
+const technologiesAdditionalInfo = {
+  HTML5: `<p>HTML5 - "describes the basic structure and content of a web page."</p>`,
+  CSS3: `<p>CSS3 - "forms the presentational layer of web pages."</p>`,
+  JavaScript: `<p>JavaScript - "programming language that allows you to add interactivity to websites."</p>`,
+  Sass: `<p>Sass - "CSS preprocessor which adds functionality souch as mixins or nesting"</p>`,
+  jQuery: `<p>jQuery - "JavaScript library designed to simplify HTML DOM tree manipulations."</p>`,
+  Bootstrap: `<p>Bootstrap - "CSS framework directed at responsive front-end web development."</p>`
+};
 
-const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
+const projectsInfo = {
+  project1: `<h3>WebApp Dashboard</h3>
                                  <p>It's the fully functional web dashboard. The app is built with mobile-first approach so it is responsive through all the resolutions.
                                  It includes Chartist.js plugin for displaying charts and CSS TOGGLE SWITCH for altering the apperance of switches.
                                  It uses sessionStorage to save settings</p>
@@ -29,7 +30,7 @@ const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
                                  <p class='technology-name'>Fetch API</p>
                                  `,
 
-                       project2:`<h3>Users Directory</h3>
+  project2: `<h3>Users Directory</h3>
                                  <p>This is the employee directory, it uses fetch API to get 12 random users. Users can be filtered with search bar. The detailed informations are displayed in modal window.</p>
 
                                  <p class='technology-name'>HTML</p>
@@ -38,7 +39,7 @@ const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
                                  <p class='technology-name'>Fetch API</p>
                                  `,
 
-                       project3:`<h3>Wheel Of Succes</h3>
+  project3: `<h3>Wheel Of Succes</h3>
                                  <p>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
 
                                  <p class='technology-name'>HTML</p>
@@ -46,7 +47,7 @@ const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
                                  <p class='technology-name'>JavaScript</p>
                                  `,
 
-                       project4:`<h3>Sign-Up Form</h3>
+  project4: `<h3>Sign-Up Form</h3>
                                  <p>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
 
                                  <p class='technology-name'>HTML</p>
@@ -54,15 +55,16 @@ const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
                                  `,
 
 
-                       project5:`<h3>Scss Web Style Guide</h3>
+  project5: `<h3>Scss Web Style Guide</h3>
                                  <p>Web style guide is a sass micro-framework created for quick prototyping.</p>
 
                                    <p class='technology-name'>HTML</p>
                                    <p class='technology-name'>Scss</p>
                                  `
-                      };
+};
 
-const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-7' target='_blank'>
+const projectsLinks = {
+  project1: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-7' target='_blank'>
                                   <button type='button'>GitHub</button>
                                   </a>
 
@@ -70,7 +72,7 @@ const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD
                                   <button class='www-button' type='button'>WWW</button>
                                   </a>`,
 
-                        project2:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-8' target='_blank'>
+  project2: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-8' target='_blank'>
                                     <button type='button'>GitHub</button>
                                   </a>
 
@@ -78,7 +80,7 @@ const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD
                                     <button class='www-button' type='button'>WWW</button>
                                   </a>`,
 
-                        project3:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-6' target='_blank'>
+  project3: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-6' target='_blank'>
                                     <button type='button'>GitHub</button>
                                   </a>
 
@@ -86,7 +88,7 @@ const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD
                                     <button class='www-button' type='button'>WWW</button>
                                   </a>`,
 
-                        project4:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-3' target='_blank'>
+  project4: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-3' target='_blank'>
                                     <button type='button'>GitHub</button>
                                   </a>
 
@@ -94,7 +96,7 @@ const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD
                                     <button class='www-button' type='button'>WWW</button>
                                   </a>`,
 
-                        project5:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-4' target='_blank'>
+  project5: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-4' target='_blank'>
                                     <button type='button'>GitHub</button>
                                   </a>
 
@@ -114,11 +116,10 @@ function closingModal() {
 }
 
 
-
 experience.addEventListener('mouseover', (e) => {
   const hovered = ` ' ${e.target} ' `;
 
-  if(hovered.includes('Image')){
+  if (hovered.includes('Image')) {
     const selection = e.target;
     const selectionAttr = selection.getAttribute('title');
     moreInfoDiv.innerHTML = technologiesAdditionalInfo[selectionAttr];
@@ -129,23 +130,23 @@ experience.addEventListener('mouseover', (e) => {
 });
 
 
-mobileMenuButton.addEventListener('click', () =>{
-  if (mobileNav.style.display === 'flex'){
+mobileMenuButton.addEventListener('click', () => {
+  if (mobileNav.style.display === 'flex') {
     mobileNav.style.display = 'none';
     mobileMenuButton.textContent = 'MENU'
-  }else {
+  } else {
     mobileNav.style.display = 'flex';
     mobileMenuButton.textContent = 'CLOSE'
   }
 });
 
 
-portfolioWrap.addEventListener( 'click', (e) => {
-    const target = e.target.getAttribute('class');
-    const chosenProject = target.substr(0,8);
-  if(target.includes('mockup')){
+portfolioWrap.addEventListener('click', (e) => {
+  const target = e.target.getAttribute('class');
+  const chosenProject = target.substr(0, 8);
+  if (target.includes('mockup')) {
 
-      modalWindow.innerHTML = `
+    modalWindow.innerHTML = `
         <p id='modal-x'>x</p>
         <div id='basic-info'>
             <img class='${chosenProject} modal-mockup' src='images/${chosenProject}.svg' alt='mockup'>
@@ -157,8 +158,8 @@ portfolioWrap.addEventListener( 'click', (e) => {
 
 
         `;
-      modalWindow.style.display = 'flex';
-      modalBackground.style.display = 'initial';
+    modalWindow.style.display = 'flex';
+    modalBackground.style.display = 'initial';
 
   }
   closingModal();
