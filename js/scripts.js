@@ -8,7 +8,6 @@ const mobileNav = document.getElementById('mobile-nav');
 
 const portfolioWrap = document.getElementById('portfolio-wrap');
 const modalWindow = document.getElementById('modal-window');
-const modalInfo = document.getElementById('modal-info');
 const modalBackground = document.getElementById('modal-background');
 
 
@@ -24,7 +23,8 @@ const projectsInfo = { project1:`It's the fully functional web dashboard. The ap
                                  It includes Chartist.js plugin for displaying charts and CSS TOGGLE SWITCH for altering the apperance of switches.
                                  It uses sessionStorage to save settings `,
 
-                       project2:`<p>This is the employee directory, it uses fetch API to get 12 random users from https://randomuser.me. Users can be filtered with search bar. The detailed informations about users are displayed in modal window.</p>
+                       project2:`<h3>Users Directory</h3>
+                                 <p>This is the employee directory, it uses fetch API to get 12 random users from https://randomuser.me. Users can be filtered with search bar. The detailed informations about users are displayed in modal window.</p>
                                  <p>Technologies:</p>
                                  <ul>
                                  <li>HTML</li>
@@ -33,7 +33,8 @@ const projectsInfo = { project1:`It's the fully functional web dashboard. The ap
                                  <li>Fetch API</li>
                                  </ul>`,
 
-                       project3:`<p>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+                       project3:`<h3>Wheel Of Succes</h3>
+                                 <p>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
                                  <p>Technologies:</p>
                                  <ul>
                                  <li>HTML</li>
@@ -41,7 +42,8 @@ const projectsInfo = { project1:`It's the fully functional web dashboard. The ap
                                  <li>JavaScript</li>
                                  </ul>`,
 
-                       project4:`<p>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
+                       project4:`<h3>Sign-Up Form</h3>
+                                 <p>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
                                  <p>Technologies:</p>
                                  <ul>
                                  <li>HTML</li>
@@ -49,7 +51,8 @@ const projectsInfo = { project1:`It's the fully functional web dashboard. The ap
                                  </ul>`,
 
 
-                       project5:`<p>Web style guide is a sass micro-framework created for quick prototyping.</p>
+                       project5:`<h3>Scss Web Style Guide</h3>
+                                 <p>Web style guide is a sass micro-framework created for quick prototyping.</p>
                                  <p>Technologies</p>
                                  <ul>
                                  <li>HTML</li>
@@ -100,7 +103,18 @@ portfolioWrap.addEventListener( 'click', (e) => {
     const chosenProject = target.substr(0,8);
   if(target.includes('mockup')){
 
-      modalInfo.innerHTML = projectsInfo[chosenProject];
+      modalWindow.innerHTML = `
+
+        <p id='modal-x'>x</p>
+        <div id='basic-info'>
+            <img class='${chosenProject} modal-mockup' src='images/${chosenProject}.svg' alt='mockup'>
+        </div>
+        <div id='modal-info'>
+            ${projectsInfo[chosenProject]}
+        </div>
+
+
+        `;
       modalWindow.style.display = 'flex';
       modalBackground.style.display = 'initial';
 
