@@ -9,6 +9,8 @@ const mobileNav = document.getElementById('mobile-nav');
 const portfolioWrap = document.getElementById('portfolio-wrap');
 const modalWindow = document.getElementById('modal-window');
 const modalInfo = document.getElementById('modal-info');
+const modalBackground = document.getElementById('modal-background');
+
 
 const technologiesAdditionalInfo = {HTML5:`<p>HTML5 - "describes the basic structure and content of a web page."</p>`,
                                     CSS3:`<p>CSS3 - "forms the presentational layer of web pages."</p>`,
@@ -55,6 +57,19 @@ const projectsInfo = { project1:`It's the fully functional web dashboard. The ap
                                  </ul>`
                       };
 
+
+function closingModal() {
+  const closingModal = document.getElementById('modal-x');
+  closingModal.addEventListener('click', () => {
+    modalWindow.style.display = 'none';
+    modalWindow.classList.remove('visible');
+    modalBackground.style.display = 'none';
+    modalBackground.classList.remove('visible');
+  });
+}
+
+
+
 experience.addEventListener('mouseover', (e) => {
   const hovered = ` ' ${e.target} ' `;
 
@@ -87,5 +102,8 @@ portfolioWrap.addEventListener( 'click', (e) => {
 
       modalInfo.innerHTML = projectsInfo[chosenProject];
       modalWindow.style.display = 'flex';
+      modalBackground.style.display = 'initial';
+
   }
+  closingModal();
 });

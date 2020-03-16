@@ -253,27 +253,49 @@ footer p {
 
 #modal-window {
   display: none;
-  flex-direction: row;
   position: fixed;
-  top:33%;
-  left:25%;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  /*max-width: 350px;*/
+  height: 400px;
   background-color: white;
-  width: 33%;
-  height: 50%;
-  z-index: 250;
-  border:solid 2px #69ca8e;
-  border-radius:10px;
-  padding: 25px;
+  border-radius: 5px;
+  border: lightgrey 1px solid;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 15px;
 }
+
 
 #modal-x {
-  position: absolute;
-  top:5px;
-  right: 5px;
-  margin:5px 5px;
+  position: fixed;
+  top: 4%;
+  left: 92%;
+  margin: 7px 2px;
   font-size: 2rem;
+  padding: 1px 10px 5px 10px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
 }
 
+#modal-x:hover {
+  background-color: #69ca8e;
+  color: white;
+}
+
+#modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
 
 /*/////////////////////*/
 /*//// MEDIA QUERY ////*/
@@ -379,6 +401,13 @@ footer p {
     width: 50%;
     left: 25%;
   }
+
+  #modal-window {
+    width: 50%;
+    /*max-width: 300px;*/
+    height: 400px;
+    padding: 50px 40px;
+  }
 }
 
 @media screen and (min-width: 1024px ) {
@@ -397,5 +426,9 @@ footer p {
   #more-info-div {
     width: 33%;
     left:33%;
+  }
+
+  #modal-window {
+    width: 1000px;
   }
 }
