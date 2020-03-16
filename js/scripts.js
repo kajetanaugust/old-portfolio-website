@@ -65,43 +65,43 @@ const projectsInfo = {
 
 const projectsLinks = {
   project1: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-7' target='_blank'>
-                                  <button type='button'>GitHub</button>
+                                  <p class='git-button'>GitHub</p>
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-7/' target='_blank'>
-                                  <button class='www-button' type='button'>WWW</button>
+                                    <p class='www-button'>WWW</p>
                                   </a>`,
 
   project2: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-8' target='_blank'>
-                                    <button type='button'>GitHub</button>
+                                    <p class='git-button'>GitHub</p>
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-8/' target='_blank'>
-                                    <button class='www-button' type='button'>WWW</button>
+                                    <p class='www-button'>WWW</p>
                                   </a>`,
 
   project3: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-6' target='_blank'>
-                                    <button type='button'>GitHub</button>
+                                    <p class='git-button'>GitHub</p>
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-6/' target='_blank'>
-                                    <button class='www-button' type='button'>WWW</button>
+                                    <p class='www-button'>WWW</p>
                                   </a>`,
 
   project4: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-3' target='_blank'>
-                                    <button type='button'>GitHub</button>
+                                    <p class='git-button'>GitHub</p>
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-3/' target='_blank'>
-                                    <button class='www-button' type='button'>WWW</button>
+                                    <p class='www-button'>WWW</p>
                                   </a>`,
 
   project5: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-4' target='_blank'>
-                                    <button type='button'>GitHub</button>
+                                    <p class='git-button'>GitHub</p>
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-4/' target='_blank'>
-                                    <button class='www-button' type='button'>WWW</button>
+                                    <p class='www-button'>WWW</p>
                                   </a>`
 };
 
