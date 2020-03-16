@@ -19,47 +19,89 @@ const technologiesAdditionalInfo = {HTML5:`<p>HTML5 - "describes the basic struc
                                     Bootstrap:`<p>Bootstrap - "open-source CSS framework directed at responsive, mobile-first front-end web development."</p>`
                                   };
 
-const projectsInfo = { project1:`It's the fully functional web dashboard. The app is built with mobile-first approach so it is responsive through all the resolutions.
+const projectsInfo = { project1:`<h3>WebApp Dashboard</h3>
+                                 <p>It's the fully functional web dashboard. The app is built with mobile-first approach so it is responsive through all the resolutions.
                                  It includes Chartist.js plugin for displaying charts and CSS TOGGLE SWITCH for altering the apperance of switches.
-                                 It uses sessionStorage to save settings `,
+                                 It uses sessionStorage to save settings</p>
+                                 <p class='technology-name'>HTML</p>
+                                 <p class='technology-name'>CSS</p>
+                                 <p class='technology-name'>JavaScript</p>
+                                 <p class='technology-name'>Fetch API</p>
+                                 `,
 
                        project2:`<h3>Users Directory</h3>
-                                 <p>This is the employee directory, it uses fetch API to get 12 random users from https://randomuser.me. Users can be filtered with search bar. The detailed informations about users are displayed in modal window.</p>
-                                 <p>Technologies:</p>
-                                 <ul>
-                                 <li>HTML</li>
-                                 <li>CSS</li>
-                                 <li>JavaScript</li>
-                                 <li>Fetch API</li>
-                                 </ul>`,
+                                 <p>This is the employee directory, it uses fetch API to get 12 random users. Users can be filtered with search bar. The detailed informations are displayed in modal window.</p>
+
+                                 <p class='technology-name'>HTML</p>
+                                 <p class='technology-name'>CSS</p>
+                                 <p class='technology-name'>JavaScript</p>
+                                 <p class='technology-name'>Fetch API</p>
+                                 `,
 
                        project3:`<h3>Wheel Of Succes</h3>
                                  <p>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
-                                 <p>Technologies:</p>
-                                 <ul>
-                                 <li>HTML</li>
-                                 <li>CSS</li>
-                                 <li>JavaScript</li>
-                                 </ul>`,
+
+                                 <p class='technology-name'>HTML</p>
+                                 <p class='technology-name'>CSS</p>
+                                 <p class='technology-name'>JavaScript</p>
+                                 `,
 
                        project4:`<h3>Sign-Up Form</h3>
                                  <p>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
-                                 <p>Technologies:</p>
-                                 <ul>
-                                 <li>HTML</li>
-                                 <li>CSS</li>
-                                 </ul>`,
+
+                                 <p class='technology-name'>HTML</p>
+                                 <p class='technology-name'>CSS</p>
+                                 `,
 
 
                        project5:`<h3>Scss Web Style Guide</h3>
                                  <p>Web style guide is a sass micro-framework created for quick prototyping.</p>
-                                 <p>Technologies</p>
-                                 <ul>
-                                 <li>HTML</li>
-                                 <li>Scss</li>
-                                 </ul>`
+
+                                   <p class='technology-name'>HTML</p>
+                                   <p class='technology-name'>Scss</p>
+                                 `
                       };
 
+const projectsLinks = { project1:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-7' target='_blank'>
+                                  <button type='button'>GitHub</button>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-7/' target='_blank'>
+                                  <button class='www-button' type='button'>WWW</button>
+                                  </a>`,
+
+                        project2:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-8' target='_blank'>
+                                    <button type='button'>GitHub</button>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-8/' target='_blank'>
+                                    <button class='www-button' type='button'>WWW</button>
+                                  </a>`,
+
+                        project3:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-6' target='_blank'>
+                                    <button type='button'>GitHub</button>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-6/' target='_blank'>
+                                    <button class='www-button' type='button'>WWW</button>
+                                  </a>`,
+
+                        project4:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-3' target='_blank'>
+                                    <button type='button'>GitHub</button>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-3/' target='_blank'>
+                                    <button class='www-button' type='button'>WWW</button>
+                                  </a>`,
+
+                        project5:`<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-4' target='_blank'>
+                                    <button type='button'>GitHub</button>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-4/' target='_blank'>
+                                    <button class='www-button' type='button'>WWW</button>
+                                  </a>`
+};
 
 function closingModal() {
   const closingModal = document.getElementById('modal-x');
@@ -104,10 +146,10 @@ portfolioWrap.addEventListener( 'click', (e) => {
   if(target.includes('mockup')){
 
       modalWindow.innerHTML = `
-
         <p id='modal-x'>x</p>
         <div id='basic-info'>
             <img class='${chosenProject} modal-mockup' src='images/${chosenProject}.svg' alt='mockup'>
+            ${projectsLinks[chosenProject]}
         </div>
         <div id='modal-info'>
             ${projectsInfo[chosenProject]}
