@@ -211,7 +211,8 @@ header {
   width: 85%;
   position: absolute;
   text-align: center;
-  left:5%;
+  left:3%;
+  /*transform: translate(-50%, -50%);*/
   border-radius: 5px;
   margin-top: 10px;
   padding-left: 15px;
