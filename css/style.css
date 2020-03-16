@@ -305,6 +305,10 @@ footer p {
   margin-top: 10px;
 }
 
+#basic-info img {
+  margin-bottom: 15px;
+}
+
 #modal-info {
   width:95%;
   text-align: center;
