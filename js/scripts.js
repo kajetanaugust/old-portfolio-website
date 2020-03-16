@@ -3,6 +3,9 @@ const technologyIcons = document.getElementsByClassName('technology-icon');
 const experience = document.getElementById('experience');
 const moreInfoDiv = document.getElementById('more-info-div');
 
+const mobileMenuButton = document.getElementById('menu-button');
+const mobileNav = document.getElementById('mobile-nav');
+
 const technologiesAdditionalInfo = {HTML5:`<p>HTML5 - "describes the basic structure and content of a web page."</p>`,
                                     CSS3:`<p>CSS3 - "forms the presentational layer of web pages."</p>`,
                                     JavaScript:`<p>JavaScript - "programming language that allows you to add interactivity to websites."</p>`,
@@ -22,5 +25,15 @@ experience.addEventListener('mouseover', (e) => {
     moreInfoDiv.innerHTML = '';
   }
 
+});
 
+
+mobileMenuButton.addEventListener('click', () =>{
+  if (mobileNav.style.display === 'flex'){
+    mobileNav.style.display = 'none';
+    mobileMenuButton.textContent = 'MENU'
+  }else {
+    mobileNav.style.display = 'flex';
+    mobileMenuButton.textContent = 'CLOSE'
+  }
 });
