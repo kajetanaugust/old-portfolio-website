@@ -62,6 +62,14 @@ const projectsInfo = {
 
                                    <p class='technology-name'>HTML</p>
                                    <p class='technology-name'>Scss</p>
+                                 `,
+
+  project6: `<h3>Design Quotes Generator</h3>
+                                 <p class='modal-text'>It's the random quote generator which displays quotes by designers and artists. It draws a random quote and a random background color when the page loads. The quote is changed every 10 seconds by setInterval method.</p>
+
+                                   <p class='technology-name'>HTML</p>
+                                   <p class='technology-name'>CSS</p>
+                                   <p class='technology-name'>JavaScript</p>
                                  `
 };
 
@@ -103,6 +111,14 @@ const projectsLinks = {
                                   </a>
 
                                   <a href='https://kajetanaugust.github.io/SCSS_WEB_STYLE_GUIDE/' target='_blank'>
+                                    <p class='www-button'>WWW</p>
+                                  </a>`,
+
+  project6: `<a href='https://github.com/KajetanAugust/A_RANDOM_QUOTE_GENERATOR' target='_blank'>
+                                    <p class='git-button'>GitHub</p>
+                                  </a>
+
+                                  <a href='https://kajetanaugust.github.io/A_RANDOM_QUOTE_GENERATOR/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`
 };
