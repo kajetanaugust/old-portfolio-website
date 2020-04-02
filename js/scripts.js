@@ -47,10 +47,13 @@ const projectsInfo = {
                                  `,
 
   project4: `<h3>Sign-Up Form</h3>
-                                 <p class='modal-text'>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and changes it's apperance using media query for 768px and 1024px widths.</p>
+                                 <p class='modal-text'>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and media query for 768px and 1024px widths.
+                                 It uses RegEx for fields validation and displays messages if validation is failed.</p>
 
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
+                                 <p class='technology-name'>JavaScript</p>
+                                 <p class='technology-name'>RegEx</p>
                                  `,
 
 
