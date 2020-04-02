@@ -38,8 +38,8 @@ const projectsInfo = {
                                  <p class='technology-name'>Fetch API</p>
                                  `,
 
-  project3: `<h3>Wheel Of Succes</h3>
-                                 <p class='modal-text'>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+  project3: `<h3>Game Show App With OOP</h3>
+                                 <p class='modal-text'>It's the browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase. It utilizes Object Oriented Programing Concept</p>
 
                                  <p class='technology-name'>HTML</p>
                                  <p class='technology-name'>CSS</p>
