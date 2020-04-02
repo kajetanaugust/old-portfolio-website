@@ -46,7 +46,7 @@ const projectsInfo = {
                                  <p class='technology-name'>JavaScript</p>
                                  `,
 
-  project4: `<h3>Sign-Up Form</h3>
+  project4: `<h3>Sign-Up Form with RegEx</h3>
                                  <p class='modal-text'>This is a contact form I have created to fit the provided mockup. It uses mobile first approach and media query for 768px and 1024px widths.
                                  It uses RegEx for fields validation and displays messages if validation is failed.</p>
 
@@ -66,43 +66,43 @@ const projectsInfo = {
 };
 
 const projectsLinks = {
-  project1: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-7' target='_blank'>
+  project1: `<a href='https://github.com/KajetanAugust/WEB_APP_DASHBOARD' target='_blank'>
                                   <p class='git-button'>GitHub</p>
                                   </a>
 
-                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-7/' target='_blank'>
+                                  <a href='https://kajetanaugust.github.io/WEB_APP_DASHBOARD/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`,
 
-  project2: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-8' target='_blank'>
+  project2: `<a href='https://github.com/KajetanAugust/EMPLOYEE_DIRECTORY_WITH_FETCH_API' target='_blank'>
                                     <p class='git-button'>GitHub</p>
                                   </a>
 
-                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-8/' target='_blank'>
+                                  <a href='https://kajetanaugust.github.io/EMPLOYEE_DIRECTORY_WITH_FETCH_API/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`,
 
-  project3: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-6' target='_blank'>
+  project3: `<a href='https://github.com/KajetanAugust/OOP_GAME_SHOW_APP' target='_blank'>
                                     <p class='git-button'>GitHub</p>
                                   </a>
 
-                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-6/' target='_blank'>
+                                  <a href='https://kajetanaugust.github.io/OOP_GAME_SHOW_APP/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`,
 
-  project4: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-3' target='_blank'>
+  project4: `<a href='https://github.com/KajetanAugust/INTERACTIVE_FORM'' target='_blank'>
                                     <p class='git-button'>GitHub</p>
                                   </a>
 
-                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-3/' target='_blank'>
+                                  <a href='https://kajetanaugust.github.io/INTERACTIVE_FORM/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`,
 
-  project5: `<a href='https://github.com/KajetanAugust/FEWD-techdegree-proj-4' target='_blank'>
+  project5: `<a href='https://github.com/KajetanAugust/SCSS_WEB_STYLE_GUIDE' target='_blank'>
                                     <p class='git-button'>GitHub</p>
                                   </a>
 
-                                  <a href='https://kajetanaugust.github.io/FEWD-techdegree-proj-4/' target='_blank'>
+                                  <a href='https://kajetanaugust.github.io/SCSS_WEB_STYLE_GUIDE/' target='_blank'>
                                     <p class='www-button'>WWW</p>
                                   </a>`
 };
